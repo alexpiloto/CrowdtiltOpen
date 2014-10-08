@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.0.0'
 
 # Framework and core dependencies
 gem 'rails', '3.2.13'
@@ -25,10 +25,15 @@ gem 'jquery-ui-rails'
 group :production do
   gem 'newrelic_rpm'
   gem 'lograge'
+ #my gems
+  gem 'rails_12factor'
 end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -41,6 +46,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'shoulda'
+  #my gem
+  gem 'sqlite3'
 end
 
 group :development do
@@ -52,3 +59,5 @@ group :test do
   gem 'capybara'
   gem 'email_spec'
 end
+
+
